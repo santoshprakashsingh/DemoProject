@@ -1,1 +1,29 @@
-12345678498959
+package JavaPrograms;
+
+import java.util.Scanner;
+
+public class FactorialProgramByRecurssion {
+	private static int factorial(int n) {
+		if(n==0)
+			return 1;
+		else
+			return n*factorial(n-1);
+	}
+
+	public static void main(String[] args) {
+		
+		int fact =1;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please enter the number :- ");
+		
+		int n= sc.nextInt();
+		
+		fact =factorial(n);
+		System.out.println("The factorial of " + n +" is :- " + fact);
+
+	}
+
+
+
+}
